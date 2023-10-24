@@ -1,0 +1,37 @@
+Instalar NextS
+
+    * Requisitos:
+
+        - Node (> 12v, > 10v). NVM | FNM
+        - Git
+        - Browser - Google Chrome - DevTools
+
+    -* Instalacion:
+        - CLI - Automatica ( npm install next react react-dom )
+        - Manual ( npm init -y )
+        
+    *paquetes necesarios: (Yarn add Next React React-dom )
+        - Yarn
+        - Next
+        - React 
+        - React-dom
+
+---------------------------------------------------------------------------
+                        NODE_OPTIONS='--inspect' 
+                        
+nos inspecciona y nos da el codigo que esta corriendo sin usar un console.log
+---------------------------------------------------------------------------
+                formas en la que next.js soporta CSS
+
+1. Global CSS (.css)
+2. module CSS (.module.css)
+3. CSS-IN-JS Styled JSX (NextJS - Vercel) este es propio de next.js
+---------------------------------------------------------------------------
+                            isomorphic-unfetch
+
+utiliza promesas para gestionar las respuestas de las solicitudes.
+Esto permite un código más limpio y legible al evitar el anidamiento 
+excesivo de callbacks
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
