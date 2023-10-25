@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "types": ["node", "express", "cors"],
     "paths": {
       "@database": ["database/db.ts"],
       "@cors": ["cors-middleware.ts"],
@@ -33,5 +34,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ]
+  ],
+  "types": ["@types/node", "@types/http-errors"]
+
 }
+
+
