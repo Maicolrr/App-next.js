@@ -1,4 +1,4 @@
-import corsWrapper from 'cors'
+import corsWrapper from '@cors'
 import { RequestHandler } from 'express'
 
 /**
@@ -31,3 +31,6 @@ function promisifyMiddleware(middleware: RequestHandler) {
 const cors = promisifyMiddleware(corsWrapper(CORS_OPTIONS))
 
 export default cors
+
+
+// clase 17  1;35
