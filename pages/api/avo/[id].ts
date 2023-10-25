@@ -7,7 +7,7 @@ const idAvos = async (request: NextApiRequest, response: NextApiResponse) => {
     try {
         // Generally, you would not want this in your apps.
         // See more in 'cors.js'
-        await enablePublicAccess(request, response)
+        await enablePublicAccess(request, response, { methods: ['GET', 'OPTIONS'] });
     
         const db = new DB()
         const avoId = request.query.id as string

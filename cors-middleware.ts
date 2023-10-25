@@ -1,4 +1,4 @@
-import corsWrapper from '@cors'
+import corsWrapper from 'cors'
 import { RequestHandler } from 'express'
 
 /**
@@ -16,21 +16,21 @@ const CORS_OPTIONS = {
 }
 
 function promisifyMiddleware(middleware: RequestHandler) {
-  return (req: any, res: any) =>
-    new Promise((resolve, reject) => {
+  return (req: any, res: any, next: any) =>
+    new Promise<void>((resolve, reject) => {
       middleware(req, res, (result: Error | unknown) => {
         if (result instanceof Error) {
-          return reject(result)
+          return reject(result);
         }
-        return resolve(result)
-      })
-    })
+        return resolve();
+      });
+    });
 }
 
 // Initialize the cors middleware
-const cors = promisifyMiddleware(corsWrapper(CORS_OPTIONS))
+const cors = promisifyMiddleware(corsWrapper(CORS_OPTIONS));
 
-export default cors
+export default cors;
 
 
 // clase 17  1;35

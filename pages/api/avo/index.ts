@@ -6,7 +6,7 @@ const allAvos = async (request: IncomingMessage, response: ServerResponse) => {
     try {
         // Generally, you would not want this in your apps.
         // See more in 'cors.js'
-        await enablePublicAccess(request, response)
+        await enablePublicAccess(request, response, { methods: ['GET', 'OPTIONS'] });
     
         const db = new DB()
         const allEntries = await db.getAll()

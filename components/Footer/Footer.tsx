@@ -28,7 +28,7 @@ const Footer = () => (
 
                 <Link href="/about">
 
-                  <p><a>Conoce más</a></p>
+                  <p>Conoce más</p>
 
                 </Link>
 
@@ -48,7 +48,7 @@ const Footer = () => (
 
                 <Link href="/">
 
-                  <p><a>Todos los productos</a></p>
+                  <p>Todos los productos</p>
 
                 </Link>
 
